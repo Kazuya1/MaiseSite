@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+  <link href="periodic-table.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script type="text/javascript" src="periodic-table.js"></script>
+  <title>MAISE | Periodic Table</title>
+  <meta name="description" content="MAISE physics simulation.">
+  <meta name="keywords" content="physics, materials, MAISE">
+</head>
+<body>
+	<div id="header">
+		<div class="section">
+			<div class="logo">
+				<a href="./">Maise</a>
+			</div>
+			<ul>
+				<li>
+					<a href="AboutMAISE.htm">About Maise</a>
+				</li>
+				<li>
+					<a href="EvolutionarySearch.htm">Evolutionary Search</a>
+				</li>
+				<li class="selected">
+					<a href="periodic-table.html">Neural Nets</a>
+				</li>
+				<li>
+					<a href="StructureAnalysis.htm">Structure Analysis</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+<!--
+  <div class="banner">
+    <div style="background-color:black;width=100%;">
+      <a href="./"><img src="media/logo.png"></a>
+    <p>
+      <span class="tabs"><a href="./">Home</a></span>
+      <span class="tabs"><a href="AboutMAISE.htm">About MAISE</a></span>
+      <span class="tabs"><a href="EvolutionarySearch.htm">Evolutionary Search</a></span>
+      <span class="tabs"><a href="periodic-table.html">Neural Nets</a></span>
+      <span class="tabs"><a href="StructureAnalysis.htm">Structure Analysis</a></span>
+    </p>
+    </div>
+    <br/>
+    <br/>
+  </div>
+-->
+	<div id="stuff">
+	</div>
+  <div class="search-bar">
+    <ul class="search"></ul>
+    <input class="clear_button" type="button" value="X"></input>
+  </div>
+  <div class="periodic-table">
+	  <br/>
+	<table>
+	  <tr>
+	    <td class="table element" id="01">H</td>
+	    <td class="empty element"></td>
+		<td class="empty element"></td>
+		<td class="empty detail" id="d00"></td>
+		<td class="empty detail" id="d01" colspan="5"></td>
+		<td class="empty element"></td>
+		<td class="empty element"></td>
+		<td class="empty element"></td>
+		<td class="empty element"></td>
+		<td class="empty element"></td>
+		<td class="empty element"></td>
+		<td class="empty element"></td>
+		<td class="empty element"></td>
+		<td class="unavailable element" id="02">He</td>
+	  </tr>
+	  <tr>
+	    <td class="table element" id="03">Li</td>
+		<td class="table element" id="04">Be</td>
+		<td class="empty element"></td>
+		<td class="empty detail" id="d10"></td>
+		<td class="empty detail" id="d11" colspan="5"></td>
+		<td class="empty element"></td>
+		<td class="empty element"></td>
+		<td class="empty element"></td>
+		<td class="table element" id="05">B</td>
+		<td class="table element" id="06">C</td>
+		<td class="table element" id="07">N</td>
+		<td class="table element" id="08">O</td>
+		<td class="table element" id="09">F</td>
+		<td class="unavailable element" id="10">Ne</td>
+	  </tr>
+	  <tr>
+	    <td class="table element" id="11">Na</td>
+	    <td class="table element" id="12">Mg</td>
+		<td class="empty element"></td>
+		<td class="empty detail" id="d20"></td>
+		<td class="empty detail" id="d21" colspan="5"></td>
+		<td class="empty element"></td>
+		<td class="empty element"></td>
+		<td class="empty element"></td>
+		<td class="table element" id="13">Al</td>
+		<td class="table element" id="14">Si</td>
+		<td class="table element" id="15">P</td>
+		<td class="table element" id="16">S</td>
+		<td class="table element" id="17">Cl</td>
+		<td class="unavailable element" id="18">Ar</td>
+	  </tr>
+	  <tr>
+	    <td class="table element" id="19">K</td>
+		<td class="table element" id="20">Ca</td>
+		<td class="table element" id="21">Sc</td>
+		<td class="table element" id="22">Ti</td>
+		<td class="table element" id="23">V</td>
+		<td class="table element" id="24">Cr</td>
+		<td class="table element" id="25">Mn</td>
+		<td class="table element" id="26">Fe</td>
+		<td class="table element" id="27">Co</td>
+		<td class="table element" id="28">Ni</td>
+		<td class="table element" id="29">Cu</td>
+		<td class="table element" id="30">Zn</td>
+		<td class="table element" id="31">Ga</td>
+		<td class="table element" id="32">Ge</td>
+		<td class="table element" id="33">As</td>
+		<td class="table element" id="34">Se</td>
+		<td class="table element" id="35">Br</td>
+		<td class="unavailable element" id="36">Kr</td>
+	  </tr>
+	  <tr>
+	    <td class="table element" id="37">Rb</td>
+		<td class="table element" id="38">Sr</td>
+		<td class="table element" id="39">Y</td>
+		<td class="table element" id="40">Zr</td>
+		<td class="table element" id="41">Nb</td>
+		<td class="table element" id="42">Mo</td>
+		<td class="table element" id="43">Tc</td>
+		<td class="table element" id="44">Ru</td>
+		<td class="table element" id="45">Rh</td>
+		<td class="table element" id="46">Pd</td>
+		<td class="table element" id="47">Ag</td>
+		<td class="table element" id="48">Cd</td>
+		<td class="table element" id="49">In</td>
+		<td class="table element" id="50">Sn</td>
+		<td class="table element" id="51">Sb</td>
+		<td class="table element" id="52">Te</td>
+		<td class="table element" id="53">I</td>
+		<td class="unavailable element" id="54">Xe</td>
+	  </tr>
+	  <tr>
+		<td class="table element" id="55">Cs</td>
+		<td class="table element" id="56">Ba</td>
+		<td class="table element" id="57">La</td>
+		<td class="table element" id="72">Hf</td>
+		<td class="table element" id="73">Ta</td>
+		<td class="table element" id="74">W</td>		
+		<td class="table element" id="75">Re</td>
+		<td class="table element" id="76">Os</td>
+		<td class="table element" id="77">Ir</td>
+		<td class="table element" id="78">Pt</td>
+		<td class="table element" id="79">Au</td>
+		<td class="table element" id="80">Hg</td>		
+		<td class="table element" id="81">Tl</td>
+		<td class="table element" id="82">Pb</td>
+		<td class="table element" id="83">Bi</td>
+		<td class="table element" id="84">Po</td>
+		<td class="table element" id="85">At</td>
+		<td class="unavailable element" id="86">Rn</td>
+	  </tr>
+	</table>
+   </div>
+  <div class="condBanner">
+    <p>Below are the available conditions for this System</p>
+    <p>System:</p>
+    <p class="chosenEles"></p>
+  </div>
+  <div class="conditions">
+  </div>
+</body>
+</html>
